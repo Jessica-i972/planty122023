@@ -1,25 +1,192 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
-/* Import de la font Roboto depuis Google Fonts et on l'applique sur tous les éléments de la page */
+/*@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');*/
+/* Import de la font Syne depuis Google Fonts et on l'applique sur tous les éléments de la page */
+@import url('https://fonts.googleapis.com/css2?family=Alata&family=Bai+Jamjuree:wght@400;600&family=Josefin+Sans:wght@300&family=Syne&display=swap');
+
 body * {
-   font-family: 'Roboto', sans-serif;
+   font-family: 'Syne', sans-serif !important;
 }
-/* On applique un gris plus clair sur les paragraphes */
-p {
-   color: black ; // #313332
-}
-/* La classe 'hover-effect' permettra de créer un effet de zoom quand l'on passera la souris par dessus les elements images enfants  */
-.hover-effect img {
-   transition: all 0.33s ease-in-out;
-   transform: scale(1) translateY(0px);
-}
-.hover-effect img:hover {
-   transition: all 0.33s ease-in-out;
-   transform: scale(1.05) translateY(-10px);
+
+h1, h2, h3 {
+   font-family: 'Syne', sans-serif !important;
 }
 
 #site-footer {
     padding: 20px;
-    text-align: center;
-    color: #6d6d6d;
-    background-color: #C8D6CF !important;
+    text-align: center;   
  }
+
+ /* Page d'accueil - images hero */
+ .feuille-gauche img {
+   position: relative;
+   top: 110px;
+   left: 216px;
+   z-index: 5;
+ }
+
+ .feuille-droite img {
+   position: relative;
+   top: 110px;
+   right: 227px;
+   z-index: 5;
+ }
+
+ .canette-accueil img {
+   position: relative;
+   z-index: 10;
+ }
+
+ /* Page Accueil - Images partie "les goûts" */
+.img-les-gouts img {
+   width: 393px;
+   height: 262px;
+}
+
+/* Btn commander 
+ {
+   width: 85px;
+   height: 37px;
+}*/
+
+.is-style-fill a  {
+   background-color: #e0b9b4;
+   height: 55px;
+   width: 198px;
+   border-radius: 5px;
+   font-size: 15px !important;
+   padding-top: 10;
+}
+
+
+/*hr.wp-block-separator .is-style-wide  {
+   width: 100%;
+}*/
+.separateur-commander {
+   width: 100%;
+}
+ .separateur-commander-un {
+   width: 100%;
+}
+
+/* Formulaire page commander */
+.form-commande {
+   display: flex;
+   justify-content: space-between;
+}
+
+.form-commande h2 {
+   color: #FFFFFF;
+   font-size: 30px;
+   font-weight: 700;
+}
+
+.form-commande label {
+   font-size: 20px;
+   color: #FFFFFF;
+   font-weight: 400;
+}
+
+.form-commande .wpcf7-form-control {
+   background-color: #FFFFFF; 
+   font-size: 15px;
+   min-height: 45px;
+   margin-top: 5px;
+}
+
+input.wpcf7-submit[type="submit"] {
+   background-color: #E0B9B4;
+   text-transform: capitalize;
+   margin: 20px auto;
+   display: flex;
+   width: 198px;
+   height: 55px;
+   border-radius: 5px;
+   font-size: 16px;
+   font-weight: 400;
+}
+
+input.wpcf7-submit[type="submit"]:hover {
+   background-color: #3b8e46;
+   border: 1px solid #FFFFFF;
+}
+
+
+
+.wp-block-uagb-container.uagb-is-root-container .uagb-block-44365314 {
+   max-width: 73%;
+}
+
+/* Page commander miniatures */
+.wp-block-columns .miniatures-commande  img {
+   width: 192px;
+   height: 128px;
+}
+
+.wp-block-columns .miniatures-commande p {
+   line-height: 24px;
+   font-weight: 800px;
+}
+
+/* input page comander */
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+  width: 39px;
+  height: 56px;
+  margin-top: 15px;
+  margin-left: 45%;
+  text-align: center;
+}
+/* Menu */
+
+/* Search icon */
+.search-toggle-li {
+   display: none;
+}
+
+#transparent-header-wrap {
+   height: 40px;
+}
+
+#transparent-header-wrap #menu-item-172 {
+   height: 100%;  
+   width: 236px;
+}
+
+#transparent-header-wrap #menu-item-172 a {
+   color: #ffffff;
+   background-color: #dc9f96;
+   text-align: center;
+}
+
+/* Formulaire page Commander */
+
+.bloc-informations {
+   border-right: 1px solid #ffffff;
+   padding-right: 45px;
+}
+
+input[type=submit] .wpcf7-form-control {
+   margin: auto;
+}
+
+/* Page nous rencontrer - Ecart entre le footer et le bandeau */
+#main #content-wrap  {
+   
+   padding-bottom: 0px !important;
+}
+
+/* Form page nous rencontrer */
+
+.form-contact-page .wpcf7-form .init{
+   background-color: #FFFFFF; 
+   font-size: 15px;
+   min-height: 45px;
+   margin-top: 5px;
+}
