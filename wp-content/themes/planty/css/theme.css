@@ -1,4 +1,3 @@
-/*@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');*/
 /* Import de la font Syne depuis Google Fonts et on l'applique sur tous les éléments de la page */
 @import url('https://fonts.googleapis.com/css2?family=Alata&family=Bai+Jamjuree:wght@400;600&family=Josefin+Sans:wght@300&family=Syne&display=swap');
 
@@ -10,12 +9,7 @@ h1, h2, h3 {
    font-family: 'Syne', sans-serif !important;
 }
 
-#site-footer {
-    padding: 20px;
-    text-align: center;   
- }
-
- /* Page d'accueil - images hero */
+ /***** Page d'accueil - images hero *****/
  .feuille-gauche img {
    position: relative;
    top: 110px;
@@ -35,36 +29,142 @@ h1, h2, h3 {
    z-index: 10;
  }
 
- /* Page Accueil - Images partie "les goûts" */
+ /******* Page Home *********/
+/* Titre principal */
+.wp-elements-432f22f581a84506be36ac626991557d {
+   font-size: 38px;
+   font-weight: 800;
+   font-family: 'Syne', sans-serif;
+   text-transform: uppercase;
+   line-height: 45px;
+}
+
+.section-plant-energy {
+   font-weight: 400;
+   font-size: 20px;
+   line-height: 24px;
+}
+
+.les-gouts {
+   font-weight: 800 !important;
+   font-size: 30px;
+   line-height: 36px;
+   margin-bottom: 0px;
+}
+
+.p-les-gouts {
+   font-weight: 400;
+   font-size: 20px;
+   line-height: 24px;
+}
+
+.title-vignettes-gouts {
+  font-weight: 800;
+  line-height: 57px;
+}
+
 .img-les-gouts img {
    width: 393px;
    height: 262px;
 }
-
-/* Btn commander 
- {
-   width: 85px;
-   height: 37px;
-}*/
 
 .is-style-fill a  {
    background-color: #e0b9b4;
    height: 55px;
    width: 198px;
    border-radius: 5px;
-   font-size: 15px !important;
-   padding-top: 10;
+   font-size: 15px !important; 
 }
 
+.is-style-fill a:hover {
+   background-color: #C02E44;
+   color: #FFFFFF;
+}
 
-/*hr.wp-block-separator .is-style-wide  {
-   width: 100%;
-}*/
+.green-title {
+   text-transform: uppercase;
+   font-weight: 800;
+   font-size: 30px;
+   line-height: 36px; 
+}
+
+.testimonial-title {
+   font-weight: 700;
+   font-size: 30px;
+   line-height: 36px;
+}
+
+.testimonial-p {
+   font-weight: 400;
+   font-size: 16px;
+   line-height: 19px;
+}
+
+/******* Page "Nous rencontrer" ******/
+.title-nous-rencontrer {
+   font-weight: 800;
+   font-size: 38px;
+   line-height: 45px;
+   text-transform: uppercase;
+}
+
+.nous-rencontrer-p {
+   font-weight: 400;
+   font-size: 20px;
+   line-height: 24px;
+   color: #000000;
+}
+
+.title-lequipe {
+   font-weight: 700;
+   font-size: 30px;
+   line-height: 36px;
+}
+
+.team-member {
+   font-weight: 700;
+   font-size: 20px;
+   line-height: 24px;
+   margin-bottom: 5px;
+}
+
+.team-job {
+   font-weight: 400;
+   font-size: 20px;
+   line-height: 24px;
+}
+
+.feuille-team {
+   position: relative;
+   top: 45px;
+}
+
+.nous-contacter {
+   font-weight: 700;
+   font-size: 30px;
+   line-height: 36px;
+   margin-bottom: 0px;
+}
+
+.form-contact-page .wpcf7-form-control {
+   background-color: #FFFFFF;
+   max-width: 383px;
+   border-radius: 7px;
+}
+
+.img-form-contact {
+   position: relative;
+   top: 300px;
+   left: 130px;
+}
+
+/******** Page "Commander" ********/
 .separateur-commander {
    width: 100%;
 }
- .separateur-commander-un {
-   width: 100%;
+
+ .wp-block-column .separateur-commander-un {
+   min-width: 100%;
 }
 
 /* Formulaire page commander */
@@ -105,11 +205,13 @@ input.wpcf7-submit[type="submit"] {
 }
 
 input.wpcf7-submit[type="submit"]:hover {
-   background-color: #3b8e46;
-   border: 1px solid #FFFFFF;
+   background-color: #C02E44;
 }
 
-
+.vertical-separator {
+   max-height: 360px;
+   border: 1px solid #FFFFFF;
+}
 
 .wp-block-uagb-container.uagb-is-root-container .uagb-block-44365314 {
    max-width: 73%;
@@ -123,7 +225,7 @@ input.wpcf7-submit[type="submit"]:hover {
 
 .wp-block-columns .miniatures-commande p {
    line-height: 24px;
-   font-weight: 800px;
+   font-weight: 800;
 }
 
 /* input page comander */
@@ -143,15 +245,26 @@ input[type=number] {
   margin-left: 45%;
   text-align: center;
 }
-/* Menu */
 
+/* Menu */
 /* Search icon */
-.search-toggle-li {
-   display: none;
+#site-logo-inner {
+   padding-left: 40px;
+}
+.vector-logo { 
+   position: relative;
+   left: 240px;
+   top: 28px;
+   z-index: 9999;
 }
 
-#transparent-header-wrap {
-   height: 40px;
+.vector-logo img {
+   height: 19px;
+   width: 9px;
+}
+
+.search-toggle-li {
+   display: none;
 }
 
 #transparent-header-wrap #menu-item-172 {
@@ -163,22 +276,21 @@ input[type=number] {
    color: #ffffff;
    background-color: #dc9f96;
    text-align: center;
+   height: 100%;
 }
 
 /* Formulaire page Commander */
-
-.bloc-informations {
-   border-right: 1px solid #ffffff;
-   padding-right: 45px;
-}
-
 input[type=submit] .wpcf7-form-control {
    margin: auto;
 }
 
+input[type=submit] .wpcf7-form-control:hover {
+   background-color: #C02E44 ;
+   border: none !important;
+}
+
 /* Page nous rencontrer - Ecart entre le footer et le bandeau */
-#main #content-wrap  {
-   
+#main #content-wrap  {  
    padding-bottom: 0px !important;
 }
 
@@ -190,3 +302,27 @@ input[type=submit] .wpcf7-form-control {
    min-height: 45px;
    margin-top: 5px;
 }
+
+/* Liens Menu et Footer */
+
+#site-navigation-wrap .dropdown-menu > li > a:hover {
+   color: #C02E44 !important;
+}
+
+.header-footer-group a:hover {
+   color: #C02E44;
+}
+
+#site-footer {
+   padding: 20px;
+   text-align: center;   
+}
+
+// `lg` applies to medium devices (tablets, less than 992px)
+@media (max-width: 991.98px) { 
+   #mobile-menu-search {
+      display: none;
+   }
+}
+
+

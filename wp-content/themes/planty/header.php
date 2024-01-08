@@ -34,7 +34,12 @@
 			<?php do_action( 'ocean_header' ); ?>
 
 			<?php do_action( 'ocean_before_main' ); ?>
-
-			<main id="main" class="site-main clr my-navbar"<?php oceanwp_schema_markup( 'main' ); ?> role="main">
+			<!-- Ajout du vecteur après le logo -->
+			<div class="vector-logo">
+				<img src="http://localhost:8888/planty/wp-content/uploads/2024/01/Vector.png" />
+			</div>
+			<main id="main" class="site-main clr"<?php oceanwp_schema_markup( 'main' ); ?> role="main">
 
 				<?php do_action( 'ocean_page_header' ); ?>
+
+				
