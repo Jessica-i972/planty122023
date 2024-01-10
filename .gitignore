@@ -1,0 +1,4 @@
+wp-content/ai1wm-backups/*
+!wp-content/ai1wm-backups/    # Pour inclure le répertoire lui-même
+!wp-content/ai1wm-backups/*.wpress
+
