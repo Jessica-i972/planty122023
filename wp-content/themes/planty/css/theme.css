@@ -1,8 +1,12 @@
 /* Import de la font Syne depuis Google Fonts et on l'applique sur tous les éléments de la page */
-@import url('https://fonts.googleapis.com/css2?family=Alata&family=Bai+Jamjuree:wght@400;600&family=Josefin+Sans:wght@300&family=Syne&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alata&family=Bai+Jamjuree:wght@400;600&family=Josefin+Sans:wght@300&family=Syne:wght@400;600;800&display=swap');
 
 body * {
    font-family: 'Syne', sans-serif !important;
+}
+
+h1 {
+   font-weight: 800 !important;
 }
 
 h1, h2, h3 {
@@ -31,10 +35,8 @@ h1, h2, h3 {
 
  /******* Page Home *********/
 /* Titre principal */
-.wp-elements-432f22f581a84506be36ac626991557d {
+.title-home {
    font-size: 38px;
-   font-weight: 800;
-   font-family: 'Syne', sans-serif;
    text-transform: uppercase;
    line-height: 45px;
 }
