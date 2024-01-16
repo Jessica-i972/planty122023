@@ -320,11 +320,9 @@ input[type=submit] .wpcf7-form-control:hover {
    text-align: center;   
 }
 
-// `lg` applies to medium devices (tablets, less than 992px)
-@media (max-width: 991.98px) { 
+/* `lg` applies to medium devices (tablets, less than 992px) */
+@media (max-width: 992px) { 
    #mobile-menu-search {
       display: none;
    }
 }
-
-
