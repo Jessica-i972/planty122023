@@ -221,7 +221,7 @@ input.wpcf7-submit[type="submit"]:hover {
 
 /* Page commander miniatures */
 .wp-block-columns .miniatures-commande  img {
-   width: 192px;
+   /*width: 192px;*/
    height: 128px;
 }
 
@@ -308,7 +308,8 @@ input[type=submit] .wpcf7-form-control:hover {
 /* Liens Menu et Footer */
 
 #site-navigation-wrap .dropdown-menu > li > a:hover {
-   color: #C02E44 !important;
+   background: #C02E44 !important;
+   color: #FFFFFF !important;
 }
 
 .header-footer-group a:hover {
@@ -325,4 +326,53 @@ input[type=submit] .wpcf7-form-control:hover {
    #mobile-menu-search {
       display: none;
    }
+
+   #mobile-menu-toggle, .mobile-menu {
+      margin-right: 40px;
+   }
+
+   h1 {
+      font-size: 26px !important;
+   }
+
+   h2 {
+      font-size: 24px !important;
+   } 
+
+   .form-commande {
+      display: flex;
+      flex-direction: column;
+      width: 80%;
+      margin: auto;
+   }
+
+   .vertical-separator {
+      display: none;
+   }
+
+   .title-vignettes-gouts {
+      font-size: 28px !important;
+   }
+
+   .wp-block-media-text__media {
+      width: 80% !important;
+   }
+
+   .col-nous-rencontrer {
+      width: 90%;
+      margin: auto;
+   }
+
+   #site-footer {
+      padding: 0px;
+   }
+}
+
+
+/* `sm` applies to x-small devices (portrait phones, less than 576px) */
+@media (max-width: 575px) { 
+   .testimonial {
+      width: 80%;
+      text-align: right;
+   }  
 }
